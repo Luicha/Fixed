@@ -1,5 +1,5 @@
-anual = 0.43
-mensual = (0.43 / 12)
+anual = 0.42
+mensual = (0.42 / 12)
 
 montoInicial = input("Ingresar monto: ")
 xMonto = int(montoInicial)
@@ -11,9 +11,9 @@ print("Si se pone a 365 días: $" + str(xMonto+montoAnual)
 
 print("Si se pone a 31 días y se le agregan los intereses: ")
 
-mes1 = (xMonto + xMonto * mensual)
+mes1 = (xMonto + (xMonto * mensual))
 print("Mes 1: " + str(mes1.__round__(2)))
-mes2 = (xMonto + mes1 * mensual)
+mes2 = (mes1 + mes1 * mensual)
 print("Mes 2: " + str(mes2.__round__(2)))
 mes3 = (mes2 + mes2 * mensual)
 print("Mes 3: " + str(mes3.__round__(2)))
